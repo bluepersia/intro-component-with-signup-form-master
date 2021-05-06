@@ -1,0 +1,19 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body p {
+    line-height: 1.6;
+}
+
+
+body, body *, body *::after, body *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body__intro {
+    min-height: 100vh;
+}
