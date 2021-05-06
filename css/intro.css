@@ -30,6 +30,8 @@
 .intro__title {
     font-size: 1.7rem;
     margin-bottom: 1em;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 .intro__try {
@@ -116,6 +118,23 @@
     font-weight: 600;
 }
 
+@media (min-width: 1024px)
+{
+    .intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+        padding-bottom: 6.18em;
+    }
+
+    .intro__main {
+        text-align: left;
+    }
+
+    .intro__title {
+        font-size: 3em;
+    }
+}
 
 
