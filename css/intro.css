@@ -6,5 +6,27 @@
 
     --n-1: hsl(249, 10%, 26%);
     --n-2: hsl(246, 25%, 77%);
+    --n-3: white;
+}
+
+
+.intro {
+    background: url(../images/bg-intro-mobile.png);
+    background-color:var(--c-1);
+
+    color: var(--n-3);
+    text-align: center;
+
+    padding: 6.18em 6.4% 4.31em;
+}
+
+
+.intro__main {
+    padding-bottom: 3em;
+}
+
+.intro__title {
+    font-size: 1.7rem;
+    margin-bottom: 1em;
 }
 
