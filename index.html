@@ -44,11 +44,22 @@
       <p class='intro__try intro__box'><span class='intro__bold'>Try it free 7 days</span> then $20/mo. thereafter</p>
 
       <form class='intro__form intro__box'>
-        <input class='intro__form-input' type='text' placeholder="First Name" name='first-name'>
-        <input class='intro__form-input' type='text' placeholder="Last Name" name='last-name'>
-        <input class='intro__form-input' type='email' placeholder="Email Address" name='email'>
-        <input class='intro__form-input' type='password' placeholder="Password" name='password'>
-
+        <div>
+          <input class='intro__form-input intro__form-firstname' type='text' placeholder="First Name" name='firstName'>
+          <p class='intro__form-input-error'>test</p>
+        </div>
+        <div>
+          <input class='intro__form-input intro__form-lastname' type='text' placeholder="Last Name" name='lastName'>
+          <p class='intro__form-input-error'></p>
+        </div>
+        <div>
+          <input class='intro__form-input intro__form-email' type='text' placeholder="Email Address" name='email'>
+          <p class='intro__form-input-error'></p>
+        </div>
+        <div>
+          <input class='intro__form-input intro__form-password' type='password' placeholder="Password" name='password'>
+          <p class='intro__form-input-error'></p>
+        </div>
         <button class='intro__form-btn' type='submit'>Claim your free trial</button>
 
 
@@ -67,6 +78,9 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+
+  <script src='./js/formValidation.js'></script>
 </body>
 
 </html>

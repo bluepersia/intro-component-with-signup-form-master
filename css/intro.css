@@ -72,6 +72,24 @@
 .intro__form *{
     font-family: inherit;
     font-size: inherit;
+
+    border-radius: 5px;
+}
+
+.intro__form-input-container--error
+{
+    position: relative;
+}
+
+
+.intro__form-input-container--error::after {
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    right: 5%;
+    top: 1em;
+    background: url(../images/icon-error.svg);
+    position:absolute;
 }
 
 
@@ -81,7 +99,22 @@
     font-size: 0.9rem;
     font-weight: 600;
 
+    width: 100%;
+
     border: solid 1px var(--n-2);
+
+}
+
+.intro__form-input-container--error .intro__form-input {
+    border: solid 2px var(--c-1);
+}
+
+
+.intro__form-input-error {
+    color:hsl(0, 100%, 74%);
+    text-align: right;
+    font-size: 0.7rem;
+    font-style: italic;
 }
 
 
@@ -93,8 +126,12 @@
 
     border: 0;
     position: relative;
-    border-radius: 5px;
     overflow: hidden;
+    transition: filter 500ms;
+}
+
+.intro__form-btn:hover, .intro__form-btn:focus {
+    filter: brightness(120%);
 }
 .intro__form-btn::after {
     content: '';
